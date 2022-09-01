@@ -36,12 +36,22 @@ Available on:
 Copy and paste either of those addresses into your browser. The default is ```http://127.0.0.1:8080``` or equivalently, ```http://localhost:8080/```. You should now be able to see the To Do list app in your browser!
 
 ## Using the App
+### Basic Functionality
 To add a list item, enter an item (i.e. "Do laundry") into the input field and click the "Add" button *or* press "Enter".
 
 To mark an item as done, click the item.
 
 To undo marking an item as done, just click the item again.
 
+### Extra Functionality
 To clear all your list items, click "Clear All".
 
 To clear any checked-off list items, click "Clear Completed".
+
+## Citations
+Basic ideas and implementation for creating list items: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
+
+Triggering an event based on keypress: https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+
+Clearing all items in a list: https://www.codegrepper.com/code-examples/javascript/javascript+remove+all+li+elements+from+ul
+
