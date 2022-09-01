@@ -9,4 +9,10 @@ function addTask() {
     }
 
     document.querySelector("#inputField").value = "";
+
+    // Add event listener for each new list item
+    li.addEventListener('click', function(e) {
+        e.target.classList.toggle('clicked');
+        console.log('CLICKED');
+    });
 }
