@@ -1,3 +1,4 @@
+/* Use dark mode with black background & white text. */
 body {
     padding: 50px;
     background-color: #000000;
@@ -5,15 +6,17 @@ body {
     color: #ffffff;
 }
 
+h1 {
+    text-align: center;
+}
+
+/* Use flexbox to center all items (including tasks, input fields, etc.) */
 .container {
     display: flex;
     justify-content: center;
 }
 
-h1 {
-    text-align: center;
-}
-
+/* Style the input field. */
 #inputContainer #inputField {
     padding: 10px;
     border: 2px solid #af36ff;
@@ -23,7 +26,8 @@ h1 {
     font-size: 16px;
 }
 
-.container #inputContainer #addButton {
+/* Style all buttons on the page . */
+.btn {
     padding: 11px 20px 11px 20px;
     margin: 15px 0px 15px 15px;
     background-color: #af36ff;
@@ -32,8 +36,14 @@ h1 {
     font-family: 'Poppins';
     font-size: 16px;
     color: #ffffff;
+    cursor: pointer;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Style the task items. */
 li {
     list-style: none;
     color: #000000;
@@ -49,9 +59,11 @@ li:hover {
     opacity: 0.8;
 }
 
+/* Change the color and add strikethrough for completed tasks. */
 li.clicked {
     background-color: #af36ff;
-    color: #fff;
+    opacity: 0.8;
+    color: #ffffff;
     text-decoration: line-through;
 }
 
